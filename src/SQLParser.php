@@ -682,7 +682,8 @@ class SQLParser{
 			case 'TEXT':
 			case 'MEDIUMTEXT':
 			case 'LONGTEXT':
-
+			case 'JSON':
+				
 				$this->parse_field_binary($tokens, $f);
 				$this->parse_field_charset($tokens, $f);
 				$this->parse_field_collate($tokens, $f);
